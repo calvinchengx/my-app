@@ -123,6 +123,13 @@
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
         <version>2.4</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>com.mycompany.app.App</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
         <executions>
           <execution>
             <id>default-jar</id>
@@ -132,6 +139,21 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.6.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <mainClass>com.mycompany.app.App</mainClass>
+        </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
