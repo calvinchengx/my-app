@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic",
+		"javac-linter.enable": true,
+		"javac-linter.maxNumberOfProblems": 100,
+		"javac-linter.javac": "~/.sdkman/candidates/java/current/bin/javac",
+		"javac-linter.classpath": [
+			"${workspaceRoot}/bin/classes"
+		]
+	}
+}
